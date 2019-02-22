@@ -1,5 +1,19 @@
 .cst-bnt {
-  background: #20f1e7;
+  background: #17A2B8;
+  background: -webkit-linear-gradient(#20f1e7, #073763);
+  background: linear-gradient(#20f1e7, #073763);
+  border-radius: 14px;
+  padding: 8px 20px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal 700 28px/1 "Calibri", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+}
+.mobile-btn {
+  width: 90%;
+  height: 50px ;
+  background: #17A2B8;
   background: -webkit-linear-gradient(#20f1e7, #073763);
   background: linear-gradient(#20f1e7, #073763);
   border-radius: 14px;
@@ -138,6 +152,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+img {
+  width: 100%;
+  height: auto ;
+}
 * {
   box-sizing: border-box;
 }
@@ -184,7 +202,7 @@ header {
   width: 53%;
   margin: 0 auto;
   display: flex;
-  border-bottom: 2px dotted lightgray;
+  border-bottom: 2px dotted #C0C0C0;
 }
 header .navheader {
   display: flex;
@@ -197,6 +215,22 @@ header nav a {
   text-decoration: none;
   font-size: 1.5em;
   color: black;
+}
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    background: red;
+    display: inline-block;
+  }
+  h1 {
+    display: inline-block;
+    background: yellow;
+    margin-left: 170px;
+  }
+  a {
+    border: 1px solid black;
+    margin: 10px ;
+  }
 }
 .footer {
   width: 100%;
@@ -256,7 +290,7 @@ header nav a {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  background: #20f1e7;
+  background: #17A2B8;
   background: -webkit-linear-gradient(#20f1e7, #073763);
   background: linear-gradient(#20f1e7, #073763);
   border-radius: 14px;
@@ -266,4 +300,36 @@ header nav a {
   font: normal 700 28px/1 "Calibri", sans-serif;
   text-align: center;
   text-shadow: 1px 1px #000000;
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    width: (max-width:500px);
+    background: yellow;
+  }
+  .container-home {
+    padding: 3%;
+    background: pink;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .top-container {
+    padding: 1%;
+    border-bottom: 3px dotted #C0C0C0;
+  }
+  .top-container h2 {
+    margin-top: 11px;
+  }
+}
+.content-section {
+  background-color: white;
+  margin: 5px;
+  border-bottom: 3px dotted #C0C0C0;
+}
+.content-section img {
+  border-radius: 10px;
+}
+.content-section .btn {
+  color: red;
 }
